@@ -1,0 +1,96 @@
+.about-section {
+  position: relative;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 992px) {
+  .about-content {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+.subsection-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.experience-item {
+  margin-bottom: 2rem;
+}
+
+.experience-item h4 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+
+.experience-item .company {
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+.experience-item .duration {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  display: block;
+  margin-bottom: 0.8rem;
+  font-style: italic;
+}
+
+.experience-item ul {
+  padding-left: 1.2rem;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.experience-item li {
+  margin-bottom: 0.5rem;
+}
+
+.education-item {
+  margin-bottom: 1.5rem;
+}
+
+.education-item h4 {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.education-item p {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+.skill-category {
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.skill-category strong {
+  color: #fff;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.certs-list {
+  padding-left: 1.2rem;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.certs-list li {
+  margin-bottom: 0.6rem;
+}
