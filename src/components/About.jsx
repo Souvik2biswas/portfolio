@@ -12,6 +12,15 @@ const About = () => {
 
   const experience = [
     {
+      role: "Data Science Intern",
+      company: "Dr. Reddy’s Foundation (Grow Tech AI Program)",
+      duration: "Bangalore, India | Apr 2026 – Present",
+      points: [
+        "Working with structured datasets; performing data extraction, transformation, and loading (ETL) operations to support analytical reporting requirements.",
+        "Supporting data quality checks and troubleshooting."
+      ]
+    },
+    {
       role: "AI Content Moderator",
       company: "Outlier AI",
       duration: "Remote | Aug 2024 – Jun 2025",
