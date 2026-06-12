@@ -45,7 +45,7 @@ const Projects = () => {
         "Deployed public inference API on Hugging Face Spaces via Git-based CI/CD, enabling zero-install multilingual speech synthesis for Hindi, Bengali, and technical English."
       ],
       tech: ["Hugging Face", "SpeechT5", "Python", "Git", "CI/CD"],
-      link: "#"
+      link: "https://huggingface.co/spaces/Solo448/Unified_Multilingual-Text_Speech"
     },
     {
       title: "Solar Cycle 25 & 26 Prediction Using Machine Learning",
@@ -56,6 +56,16 @@ const Projects = () => {
       tech: ["Python", "Scikit-learn", "XGBoost", "LightGBM", "Time-Series", "Machine Learning"],
       link: "https://drive.google.com/file/d/1ttAiidX2UHUrHDFKYEi4ayAraIeO1_0o/view?usp=sharing",
       github: "https://github.com/Souvik2biswas/Solar-cycle-prediction"
+    },
+    {
+      title: "Autonomous Financial Agent (Investment Planner)",
+      description: [
+        "Designed a privacy-first multi-agent application with local PII scrubbing, high-fidelity PDF statement parsing (LlamaParse), and structured transaction categorization.",
+        "Architected a query-routing orchestrator via LangGraph connecting a conversational assistant, a text-to-SQL agent with database protection, and an Indian Income Tax Advisory RAG agent."
+      ],
+      tech: ["Next.js", "FastAPI", "LangGraph", "LlamaParse", "SQLAlchemy", "Docker", "PostgreSQL", "Python"],
+      link: "#",
+      github: "https://github.com/Souvik2biswas/AI_investment_planner"
     }
   ];
 
