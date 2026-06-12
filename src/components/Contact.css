@@ -1,53 +1,125 @@
 .contact-section {
-  padding-bottom: 8rem;
+  padding-bottom: 9rem;
 }
 
-.contact-card {
-  max-width: 800px;
+.contact-wrapper {
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 5rem 3rem;
+}
+
+.contact-header {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
 }
 
 .contact-text {
-  font-size: 1.2rem;
-  color: #cbd5e1;
-  margin-bottom: 2rem;
-  max-width: 600px;
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  max-width: 650px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.8;
 }
 
-.contact-info {
-  margin-bottom: 2rem;
-  color: #cbd5e1;
-  font-size: 1.1rem;
+/* Contact Grid Layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
 }
 
-.contact-info p {
-  margin-bottom: 0.5rem;
+@media (min-width: 600px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.contact-info strong {
-  color: var(--accent-color);
+.contact-item-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  text-align: left;
+  transition: var(--transition-smooth);
 }
 
-.btn-primary {
-  display: inline-block;
-  padding: 1rem 2.5rem;
-  background: var(--accent-color);
-  color: #0f172a;
-  border-radius: 8px;
-  font-size: 1.1rem;
+a.contact-item-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(99, 102, 241, 0.25);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item-card.no-click {
+  cursor: default;
+}
+
+.contact-icon {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-secondary);
+  transition: var(--transition-smooth);
+}
+
+a.contact-item-card:hover .contact-icon {
+  background: var(--accent-secondary);
+  color: #07090e;
+  border-color: var(--accent-secondary);
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 0.15rem;
+}
+
+.contact-val {
+  font-size: 0.95rem;
   font-weight: 600;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+  color: #fff;
 }
 
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.6);
-  color: #0f172a;
+/* Say Hello Button Animation */
+.btn-primary-glow {
+  display: inline-block;
+  padding: 1.1rem 3.5rem;
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-secondary));
+  color: #07090e;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: var(--transition-smooth);
+  animation: pulseGlow 2.5s infinite;
+}
+
+.btn-primary-glow:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.5);
+  color: #07090e;
   text-shadow: none;
 }
